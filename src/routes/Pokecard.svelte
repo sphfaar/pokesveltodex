@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import viewport from './useViewportAction';
 	import Poketypes from './Poketypes.svelte';
 	import TypeEffects from './TypeEffects.svelte';
 	import { PokeRecursion } from './pokeRecursion';
@@ -89,7 +88,7 @@
 			class="animate-spin-fast w-16 h-16 fit-contain m-auto"
 			loading="lazy"
 			src={pokeball}
-			alt="..."
+			alt=""
 		>
 		<div
 			class="absolute top-[1.25rem] left-[1.25rem] right-[1.25rem] bottom-[52%] m-auto z-[-3] opacity-10 border {pokemonBorder

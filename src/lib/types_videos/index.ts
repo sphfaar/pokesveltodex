@@ -14,6 +14,7 @@ import grass2 from './grass/2.av1.webm';
 import grass3 from './grass/3.av1.webm';
 import grass4 from './grass/4.av1.webm';
 import poison1 from './poison/1.av1.webm';
+import poison2 from './poison/2.av1.webm';
 import electric1 from './electric/1.av1.webm';
 import electric2 from './electric/2.av1.webm';
 import electric3 from './electric/3.av1.webm';
@@ -62,6 +63,7 @@ export const pokeVfxs: {[index: string]: string} = {
 	grass3,
 	grass4,
 	poison1,
+	poison2,
 	electric1,
 	electric2,
 	electric3,
