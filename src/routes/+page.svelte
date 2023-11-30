@@ -20,12 +20,15 @@
         loading = false;
     }
 </script>
+<svelte:head>
+    <title>pokesveltodex</title>
+</svelte:head>
 
 <Pokelist pokespeciesList={pokespeciesList} />
 
 {#if nextPokeurl}
     {#if loading}
-        <img class="text-center animate-spin-fast w-16 h-16 fit-contain m-auto" src={pokeball} alt="">
+        <img width=16 height=16 class="text-center animate-spin-fast w-16 h-16 fit-contain m-auto" src={pokeball} alt="">
         {:else}
         <p class="text-center" use:viewport on:enterViewport={fetchPokemons}>Scroll for more pokemons</p>
     {/if}

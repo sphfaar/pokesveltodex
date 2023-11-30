@@ -13,7 +13,7 @@
 				try {
 					await e.target.play();
 				} catch (err) {
-					console.error("Video not played", err);
+					console.error("Video not played (know error)", err);
 				}
 			}
 		}
@@ -50,17 +50,19 @@
 	})
 </script>
 
-<video
-	use:viewport
-	on:enterViewport={handlePlay}
-	on:exitViewport={handlePause}
-	loop={true}
-	muted={true}
-	preload="none"
-	playsinline={true}
-	disablepictureinpicture={true}
-	class="w-full h-full object-cover"
->
-	<source src={pokeVfxSrc} type="video/webm" />
-	<track kind="captions" />
-</video>
+{#if pokeVfxSrc}
+	<video
+		use:viewport
+		on:enterViewport={handlePlay}
+		on:exitViewport={handlePause}
+		loop={true}
+		muted={true}
+		preload="none"
+		playsinline={true}
+		disablepictureinpicture={true}
+		class="w-full h-full object-cover"
+	>
+		<source src={pokeVfxSrc} type="video/webm" />
+		<track kind="captions" />
+	</video>
+{/if}

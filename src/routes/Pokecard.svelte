@@ -85,6 +85,8 @@
 	>
 		<p class="font-thin text-gray-400 italic capitalize">{name}</p>
 		<img
+			width={16}
+			height={16}
 			class="animate-spin-fast w-16 h-16 fit-contain m-auto"
 			loading="lazy"
 			src={pokeball}
